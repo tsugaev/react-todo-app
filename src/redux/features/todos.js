@@ -127,7 +127,7 @@ export const completeTodo = (id, completed) => {
   };
 };
 
-export const deleteTodo = (id, completed) => {
+export const deleteTodo = (id) => {
   return async (dispatch) => {
     dispatch({ type: "todos/delete/pending", payload: id });
 
